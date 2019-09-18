@@ -42,7 +42,7 @@ html, body {
     grid-template-rows: 130px 1030px 20px;
 }
 
-.main, .sidebar .bottom {
+.main, .sidebar, .bottom {
     padding: 1em;
 }
 
