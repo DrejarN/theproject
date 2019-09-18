@@ -90,7 +90,7 @@ nav li a:hover {
 
 @media (min-width: 1040px){
     .container {
-        grid-template-areas: "sidebar" "main"
+        grid-template-areas: "sidebar main"
         "sidebar bottom";
         grid-template-columns: 300px 1fr;
         grid-template-rows: 1fr auto;
