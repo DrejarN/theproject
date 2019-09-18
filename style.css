@@ -81,6 +81,9 @@ nav li a:hover {
     font-weight: 300;
     color: white;;
 }
+.main h1:after{
+    color:rgb(26, 219, 155);
+}
 
 .main p {
     font-weight: 300;
@@ -94,7 +97,7 @@ nav li a:hover {
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-weight: 400;
-    background: rgb(182, 182, 182);
+    background: rgb(26, 219, 155);
     padding: 0.5em;
     margin: 1em 0;
     transition: 0.3s;
@@ -103,7 +106,7 @@ nav li a:hover {
 }
 
 .show:hover {
-    box-shadow: 0 5px 10px rgb(255, 255, 255);
+    box-shadow: 0 5px 10px rgb(145, 145, 145);
 }
 
 
@@ -122,9 +125,9 @@ nav li a:hover {
     }
     .sidebar {
         background: linear-gradient(    
-        rgba(189,83,255,1),
-        rgba(167,151,255,1),
-        rgba(141,229,255,1));
+        rgba(0,0,0,1),
+        rgba(39,39,39,1),
+        rgba(77,77,77,1));
         padding-top: 3em;
     }
     .main {
