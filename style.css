@@ -33,7 +33,7 @@ html, body {
 
 
 
-.main, .sidebar {
+.main {
     padding: 1em;
 }
 
@@ -74,7 +74,7 @@ nav li a:hover {
 }
 
 .main p {
-    font-size: 300;
+    font-size: 200;
     line-height: 1.8em;
     color: gray;
 }
@@ -106,7 +106,7 @@ nav li a:hover {
     .main h1 {
         font-size: 3em;
     }
-    .hero p {
+    .main p {
         width: 60;
     }
 }
