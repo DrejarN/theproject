@@ -61,7 +61,7 @@ nav li {
 nav li a {
     color: white;
     font-weight: 700;
-    opacity: 0.6;
+    opacity: 0.8;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -81,14 +81,14 @@ nav li a:hover {
     font-weight: 300;
     color: white;;
 }
-.main h1:after{
+span {
     color:rgb(26, 219, 155);
 }
 
 .main p {
     font-weight: 300;
     line-height: 1.8em;
-    color: rgb(26, 219, 155);
+    color: rgb(255, 255, 255);
     font-style: italic;
 }
 
