@@ -3,13 +3,13 @@
 
 html, body {
     font-family: 'Roboto', sans-serif;
-    background: rgb(235, 235, 235);
+    background: rgb(41, 41, 41);
     margin: 0;
 }
 
 .main {
     grid-area: main;
-    background: rgb(235, 235, 235);
+    background:rgb(41, 41, 41);
 }
 
 .sidebar {
@@ -79,29 +79,29 @@ nav li a:hover {
 .main h1 {
     font-size: 2em;
     font-weight: 300;
-    color: rgb(65, 65, 65);
+    color: white;;
 }
 
 .main p {
     font-weight: 300;
     line-height: 1.8em;
-    color: rgb(148, 148, 148);
+    color: white;
     font-style: italic;
 }
 
 .show { 
     display: inline-block;
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: 700;
-    background: #BD53FF;
+    background: rgb(182, 182, 182);
     padding: 0.5em;
     margin: 1em 0;
     transition: 0.3s; 
 }
 
 .show:hover {
-    box-shadow: 0 10px 50px rgba(188,197,216,1);
+    box-shadow: 0 10px 50px rgb(255, 255, 255);
 }
 
 
