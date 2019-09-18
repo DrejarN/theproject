@@ -24,13 +24,13 @@ html, body {
 .bottom {
     grid-area: bottom;
     background-color: white;
-    font-size: 0.5em;
 }
 
 .bottom p {
     color: rgb(207, 207, 207);
+    margin: 2em auto;
     display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 .container {
@@ -40,7 +40,7 @@ html, body {
     display: grid;
     grid-template-areas: "sidebar" "main" "bottom";
     grid-template-columns: 1fr;
-    grid-template-rows: 130px 1110px 40px;
+    grid-template-rows: 130px 800px 250px;
 }
 
 .main, .sidebar, .bottom {
@@ -85,10 +85,25 @@ nav li a:hover {
 }
 
 .main p {
-    font-size: 100;
+    font-weight: 300;
     line-height: 1.8em;
     color: rgb(148, 148, 148);
     font-style: italic;
+}
+
+.show { 
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    background: #BD53FF;
+    padding: 0.5em;
+    margin: 1em 0;
+    transition: 0.3s; 
+}
+
+.show:hover {
+    box-shadow: 0 10pc 50px rgba(188,197,216,1);
 }
 
 
@@ -117,16 +132,16 @@ nav li a:hover {
         margin: 2em auto;
     }
     .main h1 {
-        font-size: 2.5em;
+        font-size: 3em;
     }
     .main p {
-        width: 60;
+        width: 60%;
     }
-    .bottom {
-        max-width: 1110;
+    .bottom p {
+        max-width: 960px;
         margin: 0 auto;
         padding: 2em 0;
-
     }
+    
 
 }
