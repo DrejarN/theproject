@@ -37,7 +37,7 @@ html, body {
     padding: 1em;
 }
 
-nav.ul {
+nav ul {
     margin: 0;
     padding: 0;
     display: flex;
@@ -45,7 +45,7 @@ nav.ul {
     text-align: center;
 }
 
-nav.li.a {
+nav li a {
     color: white;
     font-weight: 700;
     opacity: 0.6;
@@ -53,7 +53,7 @@ nav.li.a {
     transition: 0.3s;
 }
 
-nav.li.a a:hover {
+nav li a a:hover {
     opacity: 1;
 }
 
