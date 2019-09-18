@@ -58,7 +58,7 @@ nav li a {
     transition: 0.3s;
 }
 
-nav li a a:hover {
+nav li a:hover {
     opacity: 1;
 }
 
@@ -79,3 +79,34 @@ nav li a a:hover {
     color: gray;
 }
 
+
+
+@media (min-width: 1040px){
+    .container {
+        grid-template-areas: "sidebar main";
+        grid-template-columns: 300px 1fr;
+        grid-template-rows: 1fr auto;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .sidebar {
+        background: linear-gradient(    
+        rgba(189,83,255,1),
+        rgba(167,151,255,1),
+        rgba(141,229,255,1));
+        padding-top: 3em;
+    }
+    .main {
+        text-align: left;
+        margin: 2em auto;
+    }
+    .main h1 {
+        font-size: 3em;
+    }
+    .hero p {
+        width: 60;
+    }
+}
