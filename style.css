@@ -97,11 +97,12 @@ nav li a:hover {
     background: rgb(182, 182, 182);
     padding: 0.5em;
     margin: 1em 0;
-    transition: 0.3s; 
+    transition: 0.3s;
+    border-radius: 40px;
 }
 
 .show:hover {
-    box-shadow: 0 10px 50px rgb(255, 255, 255);
+    box-shadow: 0 5px 10px rgb(255, 255, 255);
 }
 
 
