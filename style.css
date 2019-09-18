@@ -5,3 +5,9 @@ body {
     background: rgb(218, 218, 218);
     font-family: 'Nunito', sans-serif;
 }
+
+.sidebar {
+    grid-area: sidebar;
+    background: linear-gradient(to right, rgba(189, 83,255,1), rgba(141, 229, 255));
+    justify-content: center;
+}
