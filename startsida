@@ -1,7 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Test</title>
-</head>
+<header> 
+    <title>Portfolio</title>
+    <link rel="stylesheet" href=style.css type="text/css">
+</header>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href"#"></a>Contact</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main"></div>
+
+    </div>
+
+</body>
 
 </html>
