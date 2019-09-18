@@ -40,7 +40,7 @@ html, body {
     display: grid;
     grid-template-areas: "sidebar" "main" "bottom";
     grid-template-columns: 1fr;
-    grid-template-rows: 120px 1045px 15px;
+    grid-template-rows: 130px 800px 250px;
 }
 
 .main, .sidebar .bottom {
