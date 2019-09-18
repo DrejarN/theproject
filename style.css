@@ -39,7 +39,7 @@ html, body {
     display: grid;
     grid-template-areas: "sidebar" "main" "bottom";
     grid-template-columns: 1fr;
-    grid-template-rows: 120px 1040px 20px;
+    grid-template-rows: 120px 1045px 15px;
 }
 
 .main, .sidebar .bottom {
@@ -94,7 +94,7 @@ nav li a:hover {
     .container {
         grid-template-areas: "sidebar main"
         "sidebar bottom";
-        grid-template-columns: 230px 1fr;
+        grid-template-columns: 220px 1fr;
         grid-template-rows: 1fr auto;
     }
     nav ul {
