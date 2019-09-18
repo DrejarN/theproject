@@ -9,13 +9,7 @@ html, body {
 .main {
     grid-area: "main";
     background: rgb(235, 235, 235);
-    font-size: 1.5em;
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-areas: "sidebar" "main";
-    grid-template-columns: 1fr;
-    grid-template-rows: 130px 800px 250px;
+
 }
 
 .sidebar {
@@ -26,6 +20,18 @@ html, body {
     rgba(141,229,255,1));
     justify-content: center;
 }
+
+.container {
+    font-size: 1.5em;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "sidebar" "main";
+    grid-template-columns: 1fr;
+    grid-template-rows: 130px 800px 250px;
+}
+
+
 
 .main, .sidebar {
     padding: 1em;
