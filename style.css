@@ -7,7 +7,7 @@ html, body {
 }
 
 .main {
-    grid-area: main;
+    grid-area: "main";
     background: rgb(235, 235, 235);
     font-size: 1.5em;
     width: 100%;
