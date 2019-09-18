@@ -14,10 +14,8 @@ html, body {
 .sidebar {
     grid-area: sidebar;
     background: linear-gradient(to right, 
-    rgba(189, 83,255, 1),
-    rgba(167, 151, 255, 1)
-    rgba(141, 229, 255, 1),
-    );
-
+    rgba(189,83,255,1),
+    rgba(167,151,255,1),
+    rgba(141,229,255,1));
     justify-content: center;
 }
