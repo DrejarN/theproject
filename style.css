@@ -123,9 +123,10 @@ nav li a:hover {
         width: 60;
     }
     .bottom {
+        max-width: 1110;
         margin: 0 auto;
         padding: 2em 0;
-        
+
     }
 
 }
