@@ -28,7 +28,8 @@ html, body {
 }
 
 .content, .sidebar {
-    padding: 0em;
+    padding: 1em;
+    margin : 0 auto;
 }
 
 nav.ul {
