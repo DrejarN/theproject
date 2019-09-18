@@ -39,7 +39,7 @@ html, body {
     display: grid;
     grid-template-areas: "sidebar" "main" "bottom";
     grid-template-columns: 1fr;
-    grid-template-rows: 130px 1030px 20px;
+    grid-template-rows: 130px 1010px 40px;
 }
 
 .main, .sidebar, .bottom {
