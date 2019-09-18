@@ -30,7 +30,7 @@ html, body {
 .bottom p {
     color: rgb(207, 207, 207);
     display: flex;
-    text-align: center;
+    justify-content: center;
 }
 
 .container {
@@ -40,7 +40,7 @@ html, body {
     display: grid;
     grid-template-areas: "sidebar" "main" "bottom";
     grid-template-columns: 1fr;
-    grid-template-rows: 130px 1010px 40px;
+    grid-template-rows: 130px 1020px 30px;
 }
 
 .main, .sidebar, .bottom {
