@@ -1,7 +1,7 @@
 /* Vår CSS kod
 */
 
-html, body {
-    height: 100%;
-    width: 100%;
+body {
+    background: rgb(218, 218, 218);
+    font-family: 'Nunito', sans-serif;
 }
