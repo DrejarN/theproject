@@ -33,8 +33,9 @@ html, body {
 
 
 
-.main {
+.main, .sidebar {
     padding: 1em;
+    margin: 0;
 }
 
 nav ul {
