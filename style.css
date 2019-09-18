@@ -85,9 +85,10 @@ nav li a:hover {
 
 .main p {
     font-family: 'Roboto:100i', sans-serif;
-    font-size: 200;
+    font-size: 100;
     line-height: 1.8em;
     color: gray;
+    font-style: italic;
 }
 
 
