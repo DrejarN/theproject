@@ -15,9 +15,9 @@ html, body {
 .sidebar {
     grid-area: sidebar;
     background: linear-gradient(to right, 
-    rgba(189,83,255,1),
-    rgba(167,151,255,1),
-    rgba(141,229,255,1));
+    rgba(0,0,0,1),
+    rgba(39,39,39,1),
+    rgba(77,77,77,1));
     justify-content: center;
 }
 
@@ -85,7 +85,7 @@ nav li a:hover {
 .main p {
     font-weight: 300;
     line-height: 1.8em;
-    color: white;
+    color: rgb(26, 219, 155);
     font-style: italic;
 }
 
@@ -93,12 +93,13 @@ nav li a:hover {
     display: inline-block;
     text-decoration: none;
     color: rgb(0, 0, 0);
-    font-weight: 700;
+    font-weight: 400;
     background: rgb(182, 182, 182);
     padding: 0.5em;
     margin: 1em 0;
     transition: 0.3s;
     border-radius: 40px;
+    
 }
 
 .show:hover {
@@ -111,7 +112,7 @@ nav li a:hover {
     .container {
         grid-template-areas: "sidebar main"
         "sidebar bottom";
-        grid-template-columns: 300px 1fr;
+        grid-template-columns: 200px 1fr;
         grid-template-rows: 1fr auto;
     }
     nav ul {
