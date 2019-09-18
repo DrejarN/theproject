@@ -28,7 +28,7 @@ html, body {
 }
 
 .content, .sidebar {
-    padding: 1em;
+    padding: 0em;
 }
 
 nav.ul {
