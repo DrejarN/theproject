@@ -9,7 +9,7 @@ html, body {
 }
 
 .main {
-    grid-area: "main";
+    grid-area: main;
     background: rgb(235, 235, 235);
 
 }
@@ -24,6 +24,7 @@ html, body {
 }
 
 .bottom {
+    grid-area: bottom;
     background-color: white;
 }
 
@@ -41,7 +42,7 @@ html, body {
     grid-template-rows: 120px 1000px 60px;
 }
 
-.main, .sidebar {
+.main, .sidebar .bottom {
     padding: 1em;
     margin: 0;
 }
