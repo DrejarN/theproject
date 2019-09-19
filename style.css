@@ -174,14 +174,13 @@ span {
 
 .darker {
     width: 100%;
-    height: 100%;
+    height: auto;
     position: absolute;
-    background-color: black;
-    opacity: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.6);
     top: 0;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 
 }
 
