@@ -196,5 +196,6 @@ span {
     position: absolute;
     top: 0;
     right: 14px;
+    font-size: 40px;
     cursor: pointer;
 }
