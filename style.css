@@ -21,6 +21,9 @@ html, body {
 .bottom {
     grid-area: bottom;
     background-color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%
 }
 
 .bottom p {
@@ -37,7 +40,7 @@ html, body {
     display: grid;
     grid-template-areas: "sidebar" "main" "bottom";
     grid-template-columns: 1fr;
-    grid-template-rows: 130px 800px 250px;
+    grid-template-rows: 130px 1000px 50px;
 }
 
 .main, .sidebar, .bottom, .main2 {
