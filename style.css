@@ -10,6 +10,7 @@ html, body {
 .main, .main2 {
     grid-area: main;
     background:rgb(61, 61, 61);
+    height: 100%
 }
 
 .sidebar {
@@ -23,7 +24,6 @@ html, body {
     background-color: white;
     position: absolute;
     bottom: 0;
-    width: 100%
 }
 
 .bottom p {
