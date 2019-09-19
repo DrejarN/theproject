@@ -1,6 +1,5 @@
 //Vår JS kod    
 
-document.getElementById('button1').addEventListener('click', function(){
 document.getElementById('button').addEventListener('click', function(){
     document.querySelector('.darker').style.display = 'flex';
 });
