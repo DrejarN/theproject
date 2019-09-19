@@ -26,7 +26,7 @@
                                 <img src = "pic.svg_.png">
                                 <h1 class = "name">Kevin Svanbäck<br>Systemvetare</h1>
                                 <p>I'm a freelance Graphic designer</p>
-                                <a class="show">Show more</a>
+                                <button id="button">Show more</button>
                         </div>
                         <div class = "jamie">
                                 <img src = "pic.svg_.png">
@@ -56,7 +56,7 @@
     </div>
 </div>
 <script>
-        document.getElementByClassName('show').addEventListener('click', function(){
+        document.getElementById('button1').addEventListener('click', function(){
             document.querySelector('.darker').style.display = 'flex';
         });
         
