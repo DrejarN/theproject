@@ -89,6 +89,10 @@ span {
     color:rgb(26, 219, 155);
 }
 
+.main img {
+    width: 200px;
+}
+
 .main p {
     font-weight: 300;
     line-height: 1.8em;
