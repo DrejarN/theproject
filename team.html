@@ -26,7 +26,7 @@
                                 <img src = "pic.svg_.png">
                                 <h1 class = "name">Kevin Svanbäck<br>Systemvetare</h1>
                                 <p>I'm a freelance Graphic designer</p>
-                                <a href = "#" class="show" id="button">Show more</a>
+                                <button id="button1">Show more</button>
                         </div>
                         <div class = "jamie">
                                 <img src = "pic.svg_.png">
@@ -55,5 +55,14 @@
         <div class = "close">X</div>
     </div>
 </div>
+<script>
+        document.getElementById('button1').addEventListener('click', function(){
+            document.querySelector('.darker').style.display = 'flex';
+        });
+        
+        document.querySelector('.close').addEventListener('click', function(){
+            document.querySelector('.darker').style.display = 'none';
+        
+        });</script>
 
 </html>
