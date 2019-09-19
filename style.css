@@ -24,6 +24,7 @@ html, body {
 }
 
 .bottom p {
+    font-weight: 100;
     color: rgb(207, 207, 207);
     text-align: center;
 }
