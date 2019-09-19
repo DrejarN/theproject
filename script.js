@@ -1,6 +1,4 @@
 //Vår JS kod    
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 document.getElementById('button').addEventListener('click', function(){
     document.querySelector('.darker').style.display = 'flex';
@@ -27,7 +25,3 @@ function showSlides() {
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 3000); // Change image every 2 seconds
   }
-=======
->>>>>>> cabef419ad3326ac60a98d96c0212f2d7039f7fc
-=======
->>>>>>> cabef419ad3326ac60a98d96c0212f2d7039f7fc
