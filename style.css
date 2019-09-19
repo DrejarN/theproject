@@ -7,7 +7,7 @@ html, body {
     margin: 0;
 }
 
-.main {
+.main, .main2 {
     grid-area: main;
     background:rgb(61, 61, 61);
 }
@@ -39,7 +39,7 @@ html, body {
     grid-template-rows: 130px 910px 40px;
 }
 
-.main, .sidebar, .bottom {
+.main, .sidebar, .bottom, .main2 {
     padding: 1em;
 }
 
@@ -68,7 +68,7 @@ nav li a:hover {
     opacity: 1;
 }
 
-.main {
+.main, .main2 {
     max-width: 960px;
     margin: 0 auto;
     text-align: center;
@@ -80,7 +80,7 @@ nav li a:hover {
     font-weight: 300;
 }
 
-.main h1 {
+.main h1, .main2 h1 {
     font-size: 1.5em;
     font-weight: 300;
     color: white;;
@@ -89,11 +89,11 @@ span {
     color:rgb(26, 219, 155);
 }
 
-.main img {
+.main2 img {
     width: 200px;
 }
 
-.main p {
+.main p, .main2 p {
     font-weight: 300;
     line-height: 1.8em;
     color: rgb(255, 255, 255);
@@ -138,10 +138,14 @@ span {
         text-align: left;
         margin: 2em auto;
     }
-    .main h1 {
+    .main2{
+        text-align: center;
+        margin: 2em auto;
+    }
+    .main h1, .main2 h1 {
         font-size: 3em;
     }
-    .main p {
+    .main p, .main2 p {
         width: 60%;
     }
     .bottom p {
