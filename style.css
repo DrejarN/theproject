@@ -141,8 +141,8 @@ span {
     .main2{
         text-align: center;
         margin: 2em auto;
-        float: left;
     }
+    
     .main h1, .main2 h1 {
         font-size: 3em;
     }
