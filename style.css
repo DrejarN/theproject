@@ -324,6 +324,7 @@ img {vertical-align: middle;}
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 300px 300px 300px 300px;
+    grid-gap: 10px;
 }
 
 .cell1 {
@@ -354,6 +355,7 @@ img {vertical-align: middle;}
         grid-template-areas: "cell1 cell2";
         grid-template-columns: auto auto;
         grid-template-rows: 300px 300px;
+        grid-gap: 10px 10px;
     }
     
     .cell1 {
