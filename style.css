@@ -297,3 +297,54 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
+/* Content som ligger under bildspelet i portfolion
+*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 300px 300px 300px 300px;
+}
+
+.cell1 {
+    background-color: blue;
+}
+
+.cell2 {
+    background-color: red;
+}
+
+.cell3 {
+    background-color: yellow;
+}
+
+.cell4 {
+    background-color: green;
+}
+
+@media (min-width: 1040px){
+
+    .grid-container {
+        display: grid;
+        grid-template-areas: "cell1 cell2";
+        grid-template-columns: auto auto;
+        grid-template-rows: 300px 300px;
+    }
+    
+    .cell1 {
+        background-color: blue;
+    }
+    
+    .cell2 {
+        background-color: red;
+    }
+    
+    .cell3 {
+        background-color: yellow;
+    }
+    
+    .cell4 {
+        background-color: green;
+    }
+}
