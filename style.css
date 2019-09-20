@@ -386,18 +386,18 @@ img {vertical-align: middle;}
 /* CONTACT CSS BÖRJAR HÄR*/
 .contactForm {
     width: auto;
-    height: 50%;
+    height: 80vh;
+    position: relative;
     background-color: rgb(61, 61, 61);
     padding: 1.2em;
-    background-color: aqua
 }
 
 .googleMaps {
     width: auto;
-    height: 50%;
+    position: relative;
+    height: 20em;
     background-color: rgb(61, 61, 61);
     padding: 1.2em;
-    background-color: pink
 }
 
 input[type=text], select, textarea {
@@ -407,7 +407,7 @@ input[type=text], select, textarea {
     box-sizing: border-box; 
     margin-top: 0.5em; 
     margin-bottom: 1.7em; 
-    resize: vertical 
+    resize: vertical
 }
 
 input[type=submit] {
@@ -434,4 +434,6 @@ iframe {
     padding: 0;
     border: none;
 }
+
+
 /* CONTACT CSS SLUTAR HÄR*/
