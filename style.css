@@ -353,8 +353,8 @@ img {vertical-align: middle;}
     .grid-container {
         display: grid;
         grid-template-areas: "cell1 cell2";
-        grid-template-columns: auto auto;
-        grid-template-rows: 400px 400px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
         grid-gap: 10px 10px;
     }
     
