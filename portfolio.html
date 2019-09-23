@@ -8,6 +8,17 @@
     <link rel="stylesheet" href=style.css type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,300i&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        window.onload = function() {
+    if (window.jQuery) {  
+        // jQuery is loaded  
+        alert("Yeah!");
+    } else {
+        // jQuery is not loaded
+        alert("Doesn't Work");
+    }
+}
+    </script>
 </header>
 <body>
     <div class="container">
@@ -28,7 +39,8 @@
                     <p1>Featured projects</p1>
                 </div>
                 <br>
-                <div class="slideshow-container">
+                <div class="slideshow-container" onmouseover="clearTimeout(myTimeOut)" onmouseout="showSlides()"> 
+                    <!-- På mouse over/out pausar eller fortsätter den bildspelet-->
 
                     <div class="mySlides fade">
                       <div class="numbertext">1 / 4</div>
@@ -67,6 +79,7 @@
                         var slideIndex = 0;
                         showSlides();
                     </script>
+                    <!--<p>Is the slideshow too fast? Hover over the picture to pause it!</p> -->
 
                     <br>
                     <div class="grid-container"> <!-- En box som omringar alla projekt under  bildspelet-->
