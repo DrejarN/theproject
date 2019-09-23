@@ -9,7 +9,10 @@ document.querySelector('.close').addEventListener('click', function(){
 
 });
 
+var myTimeOut;
+
 function showSlides() {
+    console.log(slideIndex);
     var i;
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
@@ -23,5 +26,18 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 4500); // Change image every 2 seconds
+    myTimeOut = setTimeout(showSlides, 2000); // Byter bild var 4:e sek
   }
+
+  
+  /*
+  window.onload = function() {
+    if (window.jQuery) {  
+        // jQuery is loaded  
+        alert("Yeah!");
+    } else {
+        // jQuery is not loaded
+        alert("Doesn't Work");
+    }
+}
+*/
