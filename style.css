@@ -187,12 +187,6 @@ span {
     transform: rotate(45deg);
 }
 
-.fade {
-    opacity: 0;
-    transition:2s;
-}
-
-
 
 
 @media (min-width: 1040px){
