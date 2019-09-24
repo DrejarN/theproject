@@ -1,4 +1,15 @@
 //Vår JS kod    
+$(".stripes").click(function() {
+    $("ul").slideToggle();
+    $("ul li").css("display", "block");
+  });
+
+$(window).resize(function(){
+    if($(window).width() < 1040){
+        $("ul").removeAttr('style');
+    }
+});
+
 
 document.getElementById('button').addEventListener('click', function(){
     document.querySelector('.darker').style.display = 'flex';
