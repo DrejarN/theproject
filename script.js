@@ -1,4 +1,4 @@
-//Vår JS kod
+//Vår JS kod   
 
     $(".stripes").click(function() {
         $("ul").slideToggle();
@@ -11,6 +11,27 @@
         }
     });
     
+
+$(".stripes").click(function() {
+    $("ul").slideToggle();
+    $("ul li").css("display", "block");
+  });
+
+$(window).resize(function(){
+    if($(window).width() < 1040){
+        $("ul").removeAttr('style');
+    }
+});
+
+
+document.getElementById('button').addEventListener('click', function(){
+    document.querySelector('.darker').style.display = 'flex';
+});
+
+document.querySelector('.close').addEventListener('click', function(){
+    document.querySelector('.darker').style.display = 'none';
+
+});
 
 var myTimeOut;
 
@@ -29,17 +50,5 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    myTimeOut = setTimeout(showSlides, 2000); // Byter bild var 4:e sek
+    myTimeOut = setTimeout(showSlides, 4000); // Byter bild var 4:e sek
   }
-
-  /*
-  window.onload = function() {
-    if (window.jQuery) {  
-        // jQuery is loaded  
-        alert("Yeah!");
-    } else {
-        // jQuery is not loaded
-        alert("Doesn't Work");
-    }
-}
-*/
