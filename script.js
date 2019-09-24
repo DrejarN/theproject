@@ -1,6 +1,6 @@
 //Vår JS kod   
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+$(function(){
     $(".stripes").click(function() {
         $("ul").slideToggle();
         $("ul li").css("display", "block");
@@ -12,6 +12,8 @@
         }
     });
     
+});
+
 
 $(".stripes").click(function() {
     $("ul").slideToggle();
@@ -24,14 +26,15 @@ $(window).resize(function(){
     }
 });
 
-
-document.getElementById('button').addEventListener('click', function(){
-    document.querySelector('.darker').style.display = 'flex';
-});
-
-document.querySelector('.close').addEventListener('click', function(){
-    document.querySelector('.darker').style.display = 'none';
-
+$(function(){
+    document.getElementById('moreinfo').addEventListener('click', function(){
+        document.querySelector('.darker').style.display = 'flex';
+    });
+    
+    document.querySelector('.close').addEventListener('click', function(){
+        document.querySelector('.darker').style.display = 'none';
+    
+    });
 });
 
 var myTimeOut;
