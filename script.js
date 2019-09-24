@@ -1,23 +1,27 @@
-//Vår JS kod    
-$(".stripes").click(function() {
-    $("ul").slideToggle();
-    $("ul li").css("display", "block");
-  });
+//Vår JS kod
 
-$(window).resize(function(){
-    if($(window).width() < 1040){
-        $("ul").removeAttr('style');
-    }
-});
-
-
-document.getElementById('button').addEventListener('click', function(){
+document.getElementByClassName('.show').addEventListener('click', function(){
     document.querySelector('.darker').style.display = 'flex';
 });
 
 document.querySelector('.close').addEventListener('click', function(){
     document.querySelector('.darker').style.display = 'none';
 
+});
+
+
+$(document).ready(function(){
+    $(".stripes").click(function() {
+        $("ul").slideToggle();
+        $("ul li").css("display", "block");
+      });
+    
+    $(window).resize(function(){
+        if($(window).width() < 1040){
+            $("ul").removeAttr('style');
+        }
+    });
+    
 });
 
 var myTimeOut;
@@ -40,7 +44,6 @@ function showSlides() {
     myTimeOut = setTimeout(showSlides, 2000); // Byter bild var 4:e sek
   }
 
-  
   /*
   window.onload = function() {
     if (window.jQuery) {  
