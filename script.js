@@ -1,16 +1,5 @@
 //Vår JS kod
 
-document.getElementByClassName('.show').addEventListener('click', function(){
-    document.querySelector('.darker').style.display = 'flex';
-});
-
-document.querySelector('.close').addEventListener('click', function(){
-    document.querySelector('.darker').style.display = 'none';
-
-});
-
-
-$(document).ready(function(){
     $(".stripes").click(function() {
         $("ul").slideToggle();
         $("ul li").css("display", "block");
@@ -22,7 +11,6 @@ $(document).ready(function(){
         }
     });
     
-});
 
 var myTimeOut;
 
