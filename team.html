@@ -10,18 +10,18 @@
     <div class="container">
         <div class="sidebar">
             <nav>
-                <ul>
+                <ul class = "members">
                         <p class="logo1">{...}</p>
                     <li><a href="startsida.html">Home</a></li>
                     <li><a href="team.html">Team</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </nav>
+                <nav>
         </div>
         <div class="main2">
             <section>
-                <ul>   
+                <ul class = "ulmembers">   
                           <li class = "kevin">
                                 <img src = "pic.svg_.png">
                                 <h1 class = "name">Kevin Svanbäck<br>Systemvetare</h1>
@@ -52,6 +52,7 @@
 <div class = "darker">
     <div class= "popup">
         <div class = "close">+</div>
+        <div id = "fade">Fade me in</div>
     </div>
 </div>
 <script src="script.js"></script>
@@ -59,6 +60,10 @@
         document.querySelector('.darker').style.display = 'flex';
     });
     
+    document.getElementById('button').addEventListener('click', function(){
+        document.querySelector('fade').style.opacity = 1;
+    });
+
     document.querySelector('.close').addEventListener('click', function(){
         document.querySelector('.darker').style.display = 'none';
     
