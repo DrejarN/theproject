@@ -29,6 +29,14 @@ html, body {
     padding: 2em 0;
 }
 
+.ulmembers {
+    margin: 0;
+    padding: 0;
+    display: block;
+    justify-content: space-between;
+    text-align: center;
+}
+
 .bottom p {
     color: rgb(170, 170, 170);
     padding: 0;
@@ -51,22 +59,22 @@ html, body {
     display: grid;
     grid-template-areas: "sidebar" "main" "bottom";
     grid-template-columns: 1fr;
-    grid-template-rows: 130px auto 20px;
+    grid-template-rows: 80px auto 20px;
 }
 
 .main, .sidebar, .bottom, .main2 {
     padding: 1em;
 }
 
-nav ul {
+ul {
+    display: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
+    position: static;
 }
 
 nav li {
+    display: block;
     list-style: none;
     padding: 1em 0;
 } 
@@ -77,11 +85,18 @@ nav li a {
     opacity: 0.9;
     text-decoration: none;
     transition: 0.3s;
+    display: block;
 }
 
 nav li a:hover {
     opacity: 1;
+    background: lightgray;
 }
+
+nav div {
+    display: block;
+}
+
 
 .main {
     max-width: 960px;
@@ -172,10 +187,25 @@ span {
     transform: rotate(45deg);
 }
 
+.fade {
+    opacity: 0;
+    transition:2s;
+}
+
 
 
 
 @media (min-width: 1040px){
+
+    .stripes{
+        display:none;
+    }
+    nav ul li {
+        display: block;
+    }
+    ul{
+        align-items: center;
+    }
     .container {
         grid-template-areas: "sidebar main"
         "sidebar bottom";
