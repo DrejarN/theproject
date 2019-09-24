@@ -11,20 +11,8 @@ $(function(){
             $("ul").removeAttr('style');
         }
     });
-    
 });
 
-
-$(".stripes").click(function() {
-    $("ul").slideToggle();
-    $("ul li").css("display", "block");
-  });
-
-$(window).resize(function(){
-    if($(window).width() < 1040){
-        $("ul").removeAttr('style');
-    }
-});
 
 $(function(){
     document.getElementById('moreinfo').addEventListener('click', function(){
