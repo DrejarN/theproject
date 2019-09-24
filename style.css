@@ -276,11 +276,13 @@ HÄR BÖRJAR CSS FÖR BILDSPEL
 .mySlides {display: none;}
 img {vertical-align: middle;}
 
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  background-color: blue;
 }
 
 /* Caption text - MÅSTE FIXA STORLEKEN FÖR MOBIL */ 
@@ -294,11 +296,15 @@ img {vertical-align: middle;}
   text-align: left;
 }
 
+.bsBild {
+    width: 100%;
+}
+
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
+  color: purple;
   font-size: 12px;
-  padding: 8px 12px;
+  padding: 20px 12px;
   position: absolute;
   top: 0;
 }
@@ -320,12 +326,11 @@ img {vertical-align: middle;}
 
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
 
+/*
 @-webkit-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
@@ -335,6 +340,7 @@ img {vertical-align: middle;}
   from {opacity: .4} 
   to {opacity: 1}
 }
+*/
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
@@ -347,33 +353,29 @@ img {vertical-align: middle;}
 .grid-container {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 300px 300px 300px 300px;
+    grid-template-rows: auto auto auto auto;
     grid-gap: 15px;
 }
 
 .projektBildMini {
-    /* width: 150px;
-    height: 100px; */
     float: right;
+    padding: 0.4em;
+    width: 50%;
 }
 
 .cell1 {
-    background-color: blue;
     padding: 0.2em;
 }
 
 .cell2 {
-    background-color: red;
     padding: 0.2em;
 }
 
 .cell3 {
-    background-color: yellow;
     padding: 0.2em;
 }
 
 .cell4 {
-    background-color: green;
     padding: 0.2em;
 }
 
@@ -382,31 +384,53 @@ img {vertical-align: middle;}
     font-size: 1,2em;
 }
 
+p.brodtext {
+    font-size: 0.7em;
+    text-align: left;
+    color: black;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+p.brodtextFet {
+    font-size: 0.7em;
+    font-weight: 600;
+    text-align: left;
+    color: black;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
 @media (min-width: 1040px){
 
     .grid-container {
         display: grid;
-        grid-template-areas: "cell1 cell2";
-        grid-template-columns: 50% 50%;
+        grid-template-columns: auto auto;
         grid-template-rows: auto auto;
         grid-gap: 10px 10px;
     }
+
+    .projektBildMini {
+        float: right;
+        padding: 0.4em;
+    }
     
     .cell1 {
-        background-color: blue;
         padding: 0.2em;
     }
     
     .cell2 {
-        background-color: red;
+        padding: 0.2em;
     }
     
     .cell3 {
-        background-color: yellow;
+        padding: 0.2em;
     }
     
     .cell4 {
-        background-color: green;
+        padding: 0.2em;
     }
 
     .main p1 {
@@ -414,6 +438,21 @@ img {vertical-align: middle;}
         margin: 5;
         font-size: 2em;
         text-align: center;
+    }
+
+    p.brodtext {
+        font-size: 0.7em;
+        color: black;
+        padding: 0;
+        margin: 0;
+    }
+    
+    p.brodtextFet {
+        font-size: 0.7em;
+        font-weight: 600;
+        color: black;
+        padding: 0;
+        margin: 0;
     }
 
 }
