@@ -7,6 +7,7 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href=style.css type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,300i&display=swap" rel="stylesheet">
+    <script type='text/javascript' src='validation.js'></script>
 
 </header>
 <body>
@@ -27,10 +28,10 @@
         <div class="main">
             <section>
                 <!-- Här är main 'content', skriv in info / vad ni vill fylla sidan med här! -->
-                <div class="contactForm">
+                <div class="contactFormClass">
 
                         <!-- Kör action när man trycker på submit och öppnar resultatet i ett nytt fönster -->
-                        <form action="action_page.php" target="_blank">
+                        <form name="contactForm" onsubmit="return validera()">
                 
                             <!-- Ruta 1: Förnamn -->
                             <label for="fname">First Name</label>
@@ -38,11 +39,11 @@
                             
                             <!-- Ruta 2: Telefon -->
                             <label for="phoneNr">Phone Number</label>
-                            <input type="text" id="phoneNr" name="phonenumber" placeholder="Your phone number">
+                            <input type="tel" id="phoneNr" name="phonenumber" placeholder="Your phone number">
                 
                             <!-- Ruta 3: E-mail -->
                             <label for="email">E-mail</label>
-                            <input type="text" id="email" name="email" placeholder="Your E-mail">
+                            <input type="email" id="email" name="emailadress" placeholder="Your E-mail">
 
                             <!-- Ruta 4: Submit -->
                             <label for="subject">Subject</label>
