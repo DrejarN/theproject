@@ -71,12 +71,25 @@ function showSlides() {
     myTimeOut = setTimeout(showSlides, 4000); // Byter bild var 4:e sek
   }
 
-  function sparaData() {
+  var fornamn = document.querySelector('#fname');
+  
+/*
+  $('')
+$("#sub").on('click', sparaData); 
+  {
+    console.log(fornamn);
+  }
+
+
+
     var mittObj = {
-      fornamn = enVariabel.getItem();,
-      efternamn = enVariabel.getItem();,
-      land = enVariabel.getItem();,
-      amne = enVariabel.getItem();
+      
+      
+
+      fornamn = enVariabel.getItem(),
+      efternamn = enVariabel.getItem(),
+      land = enVariabel.getItem(),
+      amne = enVariabel.getItem()
     };
 
     var mittObj_serialized = JSON.stringify(mittObj);
@@ -84,11 +97,24 @@ function showSlides() {
     localStorage.setItem("mittObj", mittObj_serialized);
     console.log(mittObj_serialized);
 
-  }
+    function laddaData() {
 
-  function laddaData() {
+    if(mittObj =! null) {
 
     var mittObj_deserialized = JSON.parse(localStorage.getItem(mittObj));
+    var fornamnStringat = JSON.parse(localStorage.getItem(mittObj.fornamn));
+    var efternamnStringat = JSON.parse(localStorage.getItem(mittObj.fornamn));
+    var landStringat = JSON.parse(localStorage.getItem(mittObj.fornamn));
+    var amneStringat = JSON.parse(localStorage.getItem(mittObj.fornamn));
 
-    fornamn = 
-  }
+
+    enVariabel.setItem() = fornamn;
+
+    }
+  } */
+
+  $(function(){
+    document.getElementById('sub').addEventListener('click', function(){
+         console.log(fornamn.value);
+     });
+    });
