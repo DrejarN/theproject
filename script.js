@@ -30,9 +30,35 @@ $(function(){
     document.getElementById('moreinfo').addEventListener('click', function(){
         document.querySelector('.darker').style.display = 'flex';
     });
+
+    document.getElementById('moreinfo').addEventListener('click', function(){
+        $(".hidden").fadeIn("slow");
+    });
     
     document.querySelector('.close').addEventListener('click', function(){
         document.querySelector('.darker').style.display = 'none';
+    
+    });
+
+});
+
+$(function(){
+    document.getElementById('moreinfo2').addEventListener('click', function(){
+        document.querySelector('.darker2').style.display = 'flex';
+    });
+    
+    document.querySelector('.close').addEventListener('click', function(){
+        document.querySelector('.darker2').style.display = 'none';
+    
+    });
+});
+$(function(){
+    document.getElementById('moreinfo3').addEventListener('click', function(){
+        document.querySelector('.darker3').style.display = 'flex';
+    });
+    
+    document.querySelector('.close').addEventListener('click', function(){
+        document.querySelector('.darker3').style.display = 'none';
     
     });
 });
