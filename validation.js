@@ -1,9 +1,7 @@
 function validera() {
     var förnamn = document.contactForm.firstname.value;
-    /*
-    var phonenumber = document.getElementById("phoneNr").value;
-    var email = document.getElementById("email").value;
-    */
+    var telefonnummer = document.contactForm.phonenumber.value;
+    var epost = document.contactForm.emailadress.value;
     var isValid = true;
 
     if (förnamn == null || förnamn == "") {
@@ -11,17 +9,16 @@ function validera() {
         isValid = false;
     }
 
-    /*
-    if (!/^\+?\d{0,13}$/i.test(phonenumber)) {
-        alert("Please input a correct phone number")
+    if (telefonnummer<10) {
+        alert("Phone number needs to be at least 10 numbers long")
         isValid = false;
     }
 
-    if (!/^[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}$/i.test(email)) {
-        alert("Please input a correct emailadress")
-        isValid = false;
-    }
-    */
+        if (epost < 8) {
+            alert("E-mail must be atleast 8 characters long")
+            isValid = false;
+        }
 
-    return isValid;
-}
+
+        return isValid;
+    }
