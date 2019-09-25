@@ -70,3 +70,25 @@ function showSlides() {
     dots[slideIndex-1].className += " active";
     myTimeOut = setTimeout(showSlides, 4000); // Byter bild var 4:e sek
   }
+
+  function sparaData() {
+    var mittObj = {
+      fornamn = enVariabel.getItem();,
+      efternamn = enVariabel.getItem();,
+      land = enVariabel.getItem();,
+      amne = enVariabel.getItem();
+    };
+
+    var mittObj_serialized = JSON.stringify(mittObj);
+
+    localStorage.setItem("mittObj", mittObj_serialized);
+    console.log(mittObj_serialized);
+
+  }
+
+  function laddaData() {
+
+    var mittObj_deserialized = JSON.parse(localStorage.getItem(mittObj));
+
+    fornamn = 
+  }
