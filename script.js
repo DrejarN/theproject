@@ -17,12 +17,13 @@ $(function(){
 $(function(){
     document.getElementById('moreinfo').addEventListener('click', function(){
         document.querySelector('.darker').style.display = 'flex';
+        $(document).ready(function(){
+            $('.html').animate({width: '100%'},2000);
+            $('.css').animate({width: '90%'},3000);
+            $('.js').animate({width: '40%'},4000);
+          });
     });
 
-    document.getElementById('moreinfo').addEventListener('click', function(){
-        $(".hidden").fadeIn("slow");
-    });
-    
     document.querySelector('.close').addEventListener('click', function(){
         document.querySelector('.darker').style.display = 'none';
     
@@ -33,9 +34,14 @@ $(function(){
 $(function(){
     document.getElementById('moreinfo2').addEventListener('click', function(){
         document.querySelector('.darker2').style.display = 'flex';
+        $(document).ready(function(){
+            $('.html').animate({width: '80%'},2000);
+            $('.css').animate({width: '90%'},3000);
+            $('.js').animate({width: '50%'},4000);
+          });
     });
     
-    document.querySelector('.close').addEventListener('click', function(){
+    document.querySelector('.close2').addEventListener('click', function(){
         document.querySelector('.darker2').style.display = 'none';
     
     });
@@ -43,9 +49,14 @@ $(function(){
 $(function(){
     document.getElementById('moreinfo3').addEventListener('click', function(){
         document.querySelector('.darker3').style.display = 'flex';
+        $(document).ready(function(){
+            $('.html').animate({width: '50%'},2000);
+            $('.css').animate({width: '30%'},3000);
+            $('.js').animate({width: '100%'},4000);
+          });
     });
     
-    document.querySelector('.close').addEventListener('click', function(){
+    document.querySelector('.close3').addEventListener('click', function(){
         document.querySelector('.darker3').style.display = 'none';
     
     });
@@ -70,3 +81,4 @@ function showSlides() {
     dots[slideIndex-1].className += " active";
     myTimeOut = setTimeout(showSlides, 4000); // Byter bild var 4:e sek
   }
+
