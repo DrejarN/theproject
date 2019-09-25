@@ -82,7 +82,7 @@ function showSlides() {
     myTimeOut = setTimeout(showSlides, 4000); // Byter bild var 4:e sek
   }
 
-  function sparaData() {
+ /* function sparaData() {
     var mittObj = {
       fornamn = enVariabel.getItem();,
       efternamn = enVariabel.getItem();,
@@ -103,3 +103,4 @@ function showSlides() {
 
     fornamn = 
   }
+*/
