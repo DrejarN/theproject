@@ -11,6 +11,7 @@ html, body {
     height: auto;
     grid-area: main;
     background:#ececec;
+
 }
 
 .sidebar {
@@ -71,6 +72,8 @@ ul {
     margin: 0;
     padding: 0;
     position: static;
+    background: rgb(218, 218, 218);
+    width: 17%;
 }
 
 nav li {
@@ -96,7 +99,6 @@ nav li a:hover {
 nav div {
     display: block;
 }
-
 
 .main {
     max-width: 960px;
@@ -210,8 +212,10 @@ span {
     nav ul li {
         display: block;
     }
-    ul{
+    ul{ 
+        width: auto;
         align-items: center;
+        background: none;
     }
     .container {
         grid-template-areas: "sidebar main"
