@@ -5,9 +5,10 @@
     <title>Contact Us</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script type='text/javascript' src='validation.js'></script>
     <link rel="stylesheet" href=style.css type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,300i&display=swap" rel="stylesheet">
-    <script type='text/javascript' src='validation.js'></script>
+    
 
 </header>
 <body>
@@ -31,35 +32,37 @@
                 <div class="contactFormClass">
 
                         <!-- Kör action när man trycker på submit och öppnar resultatet i ett nytt fönster -->
-                        <form name="contactForm" onsubmit="return validera()">
+                        <form name="contactForm">
                 
                             <!-- Ruta 1: Förnamn -->
-                            <label for="fname">First Name</label>
-                            <p class="valiP"><span class="emsg hidden">Please Enter a Valid Name</span></p>
+                            <label for="fname">Name</label>
+                            <label class="l2"><span class="emsg1 hidden1">Please enter a valid Name!</span></label>
                             <input type="text" id="fname" name="firstname" placeholder="Your name" class="storeData">
                             
                             <!-- Ruta 2: Telefon -->
                             <label for="phoneNr">Phone Number</label>
-                            <input type="tel" id="phoneNr" name="phonenumber" placeholder="Your phone number" class="storeData">
+                            <label class="l2"><span class="emsg2 hidden2">Please enter a valid number!</span></label>
+                            <input type="text" id="phoneNr" name="phonenumber" placeholder="Your phone number" class="storeData">
                 
                             <!-- Ruta 3: E-mail -->
                             <label for="email">E-mail</label>
-                            <input type="email" id="email" name="emailadress" placeholder="Your E-mail" class="storeData">
+                            <label class="l2"><span class="emsg3 hidden3">Please enter a valid email!</span></label>
+                            <input type="text" id="email" name="emailadress" placeholder="Your E-mail" class="storeData">
 
-                            <!-- Ruta 4: Submit -->
+                            <!-- Ruta 4: Meddelande -->
                             <label for="subject">Subject</label>
-                            <textarea id="subject" name="subject" placeholder="Write something" style="height:200px" class="storeData"></textarea>
+                            <label class="l2"><span class="emsg4 hidden4">The text field is empty!</span></label>
+                            <textarea id="subject" name="subject" placeholder="Write something" rows="10" class="storeData"></textarea>
                 
                             <!-- Submit-knapp -->
                             <input type="submit" value="Submit" id="sub">
                         </form>
                     
-                
-                    <div class="googleMaps">
+                </div>
+                        <div class="googleMaps">
                 
                         <!-- Kartbild på förbestämd plats, klick leder till interaktiv karta -->
-                        <iframe
-                            src="https://maps.google.com/maps?q=%C3%96rebro%20Universitet,%20Sweden&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"></iframe>
+                        <iframe src="https://maps.google.com/maps?q=%C3%96rebro%20Universitet,%20Sweden&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"></iframe>
                     </div>
             </section>
         </div>
