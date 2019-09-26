@@ -82,33 +82,7 @@ function showSlides() {
     myTimeOut = setTimeout(showSlides, 4000); // Byter bild var 4:e sek
   }
 
-  //var fornamn = document.querySelector('#fname');
-  
 
-/*
-// Denna funktion ska på knapptryck skapa ett objekt som görs om till String i JSON-format och lagrar i localstorage
-$(document).ready(function() {
-    $("#sub").on('click', function() {
-
-      var förnamn = document.contactForm.firstname.value;
-      var telefonnummer = document.contactForm.phonenumber.value;
-      var epost = document.contactForm.emailadress.value;
-
-      var mittObj = {
-
-        name: förnamn,
-        tele: telefonnummer,
-        epost: epost
-    };
-
-    var mittObj_serialized = JSON.stringify(mittObj);
-
-
-    localStorage.setItem("mittObj", mittObj_serialized);
-
-    });
-});
-*/
 
 // Denna funktion ska på knapptryck skapa ett objekt som görs om till String i JSON-format och lagrar i localstorage
 $(document).ready(function() {
