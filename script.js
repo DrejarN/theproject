@@ -82,44 +82,67 @@ function showSlides() {
     myTimeOut = setTimeout(showSlides, 4000); // Byter bild var 4:e sek
   }
 
-  var fornamn = document.querySelector('#fname');
+  //var fornamn = document.querySelector('#fname');
   
+
 /*
-  $('')
-$("#sub").on('click', sparaData); 
-  {
-    console.log(fornamn);
-  }
+// Denna funktion ska på knapptryck skapa ett objekt som görs om till String i JSON-format och lagrar i localstorage
+$(document).ready(function() {
+    $("#sub").on('click', function() {
 
+      var förnamn = document.contactForm.firstname.value;
+      var telefonnummer = document.contactForm.phonenumber.value;
+      var epost = document.contactForm.emailadress.value;
 
+      var mittObj = {
 
-    var mittObj = {
-      
-      
-
-      fornamn = enVariabel.getItem(),
-      efternamn = enVariabel.getItem(),
-      land = enVariabel.getItem(),
-      amne = enVariabel.getItem()
+        name: förnamn,
+        tele: telefonnummer,
+        epost: epost
     };
 
     var mittObj_serialized = JSON.stringify(mittObj);
 
+
     localStorage.setItem("mittObj", mittObj_serialized);
-    console.log(mittObj_serialized);
 
-    function laddaData() {
+    });
+});
+*/
 
-    if(mittObj =! null) {
+// Denna funktion ska på knapptryck skapa ett objekt som görs om till String i JSON-format och lagrar i localstorage
+$(document).ready(function() {
+  $('.storeData').keyup(function() {
 
-    var mittObj_deserialized = JSON.parse(localStorage.getItem(mittObj));
-    var fornamnStringat = JSON.parse(localStorage.getItem(mittObj.fornamn));
-    var efternamnStringat = JSON.parse(localStorage.getItem(mittObj.fornamn));
-    var landStringat = JSON.parse(localStorage.getItem(mittObj.fornamn));
-    var amneStringat = JSON.parse(localStorage.getItem(mittObj.fornamn));
+    var förnamn = document.contactForm.firstname.value;
+    var telefonnummer = document.contactForm.phonenumber.value;
+    var epost = document.contactForm.emailadress.value;
+    var meddelande = document.contactForm.subject.value;
+
+    var mittObj = {
+
+      name: förnamn,
+      tele: telefonnummer,
+      epost: epost,
+      meddelande: meddelande
+  };
+
+  var mittObj_serialized = JSON.stringify(mittObj);
 
 
-    enVariabel.setItem() = fornamn;
+  localStorage.setItem("mittObj", mittObj_serialized);
 
-    }
-  } */
+  });
+});
+
+
+
+
+//  Tanken med denna är att kolla om det finns nåt i Local Storage, och i så fall fylla i forumläret med de som finns i Local Storage
+$(document).ready(function() {
+  document.contactForm.emailadress.value = JSON.parse(localStorage.getItem('mittObj')).epost;
+  document.contactForm.firstname.value = JSON.parse(localStorage.getItem('mittObj')).name;
+  document.contactForm.phonenumber.value = JSON.parse(localStorage.getItem('mittObj')).tele;
+  document.contactForm.subject.value = JSON.parse(localStorage.getItem('mittObj')).meddelande;
+ 
+});
