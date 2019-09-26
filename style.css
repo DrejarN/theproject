@@ -22,6 +22,7 @@ html, body {
     #6C40FF    
     );  
     justify-content: center;
+    z-index: 9999;
 }
 
 .bottom {
@@ -36,6 +37,7 @@ html, body {
     display: block;
     justify-content: space-between;
     text-align: center;
+    list-style: none;
 }
 
 .bottom p {
@@ -72,7 +74,7 @@ ul {
     margin: 0;
     padding: 0;
     position: static;
-    background: rgb(218, 218, 218);
+    background: rgb(143, 150, 255);
     width: 17%;
 }
 
@@ -93,7 +95,7 @@ nav li a {
 
 nav li a:hover {
     opacity: 1;
-    background: lightgray;
+    background: rgb(213, 161, 255);
 }
 
 nav div {
@@ -239,7 +241,7 @@ span {
     .main {
         margin: 2em auto;
     }
-    .main2 ul{
+    .ulmembers {
         margin: 2em auto;
         display: flex;
         justify-content: space-evenly;
