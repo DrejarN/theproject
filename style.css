@@ -492,7 +492,7 @@ p.brodtextFet {
 
 input[type=text], textarea {
     width: 100%; 
-    padding: 1.2em; 
+    padding: 1.2em;
     border: 1px solid white; 
     box-sizing: border-box; 
     margin-top: 0.5em; 
@@ -618,3 +618,26 @@ iframe {
     margin: 0;
     font-size: 1em;
 }
+
+/* VALIDERING */
+
+.emsg{
+    color: red;
+    padding: 0;
+    margin: 0;
+}
+
+
+.valiP {
+    color: red;
+    font-size: 0.6em;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+
+.hidden {
+     visibility: hidden;
+}
+
