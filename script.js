@@ -82,6 +82,7 @@ function showSlides() {
     myTimeOut = setTimeout(showSlides, 4000); // Byter bild var 4:e sek
   }
 
+  
 $(document).ready(function() {
   $('.storeData').keyup(function() {
 
@@ -99,12 +100,11 @@ $(document).ready(function() {
   };
 
   var mittObj_serialized = JSON.stringify(mittObj);
-
-
   localStorage.setItem("mittObj", mittObj_serialized);
 
   });
 });
+
 
 $(document).ready(function() {
   document.contactForm.emailadress.value = JSON.parse(localStorage.getItem('mittObj')).epost;
@@ -114,17 +114,9 @@ $(document).ready(function() {
  
 });
 
-//Validering
 
-$(document).ready(function() {
-    var $regexname=/^([a-zA-Z]{3,30})$/;
-    $('#fname').focusout(function() {
-      if (!$(this).val().match($regexname)) {
-           $('.emsg').removeClass('hidden');
-           $('.emsg').show();
-       }
-     else {
-          $('.emsg').addClass('hidden');
-         }
+$(function() {
+  $('#sub').click(function() {
+    window.localStorage.removeItem('mittObj');
   });
 });
