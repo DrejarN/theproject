@@ -82,9 +82,6 @@ function showSlides() {
     myTimeOut = setTimeout(showSlides, 4000); // Byter bild var 4:e sek
   }
 
-
-
-// Denna funktion ska på knapptryck skapa ett objekt som görs om till String i JSON-format och lagrar i localstorage
 $(document).ready(function() {
   $('.storeData').keyup(function() {
 
@@ -109,14 +106,25 @@ $(document).ready(function() {
   });
 });
 
-
-
-
-//  Tanken med denna är att kolla om det finns nåt i Local Storage, och i så fall fylla i forumläret med de som finns i Local Storage
 $(document).ready(function() {
   document.contactForm.emailadress.value = JSON.parse(localStorage.getItem('mittObj')).epost;
   document.contactForm.firstname.value = JSON.parse(localStorage.getItem('mittObj')).name;
   document.contactForm.phonenumber.value = JSON.parse(localStorage.getItem('mittObj')).tele;
   document.contactForm.subject.value = JSON.parse(localStorage.getItem('mittObj')).meddelande;
  
+});
+
+//Validering
+
+$(document).ready(function() {
+    var $regexname=/^([a-zA-Z]{3,30})$/;
+    $('#fname').focusout(function() {
+      if (!$(this).val().match($regexname)) {
+           $('.emsg').removeClass('hidden');
+           $('.emsg').show();
+       }
+     else {
+          $('.emsg').addClass('hidden');
+         }
+  });
 });
