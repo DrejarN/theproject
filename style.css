@@ -479,14 +479,24 @@ p.brodtextFet {
 /* CONTACT CSS BÖRJAR HÄR*/
 .contactFormClass {
     width: auto;
+    height: auto;
+    overflow: auto;
     position: relative;
     background-color: rgb(61, 61, 61);
     padding: 1.2em;
+    display: flex;
 }
+
+form {
+    height: auto;
+    width: auto;
+    overflow: auto;
+}
+
 
 .googleMaps {
     width: auto;
-    position: relative;
+    position: flex;
     height: 20em;
     background-color: rgb(61, 61, 61);
     padding: 1.2em;
@@ -499,7 +509,7 @@ input[type=text], textarea {
     box-sizing: border-box; 
     margin-top: 0.5em; 
     margin-bottom: 1.7em; 
-    resize: vertical
+    resize: none;
 }
 
 input[type=email] {
@@ -509,7 +519,7 @@ input[type=email] {
     box-sizing: border-box; 
     margin-top: 0.5em; 
     margin-bottom: 1.7em; 
-    resize: vertical
+    resize: none;
 }
 
 input[type=tel] {
@@ -519,7 +529,7 @@ input[type=tel] {
     box-sizing: border-box; 
     margin-top: 0.5em; 
     margin-bottom: 1.7em; 
-    resize: vertical
+    resize: none;
 }
 
 input[type=submit] {
@@ -537,6 +547,12 @@ input[type=submit]:hover {
 
 label {
     color: white;
+    font-size: 0.8em;
+    float: left;
+}
+
+.l2 {
+    float: right;
 }
 
 iframe { 
@@ -546,6 +562,23 @@ iframe {
     padding: 0;
     border: none;
 }
+
+/*
+@media (min-width: 1040px){
+
+    .contactFormClass {
+        min-width: 800px;
+        overflow: auto;
+        display: inline-block;
+        position: relative;
+        background-color: rgb(61, 61, 61);
+        padding: 1.2em;
+    }
+
+}
+
+*/
+
 
 
 /* CONTACT CSS SLUTAR HÄR*/
@@ -623,23 +656,17 @@ iframe {
 
 /* VALIDERING */
 
-.emsg{
+.emsg1, .emsg2, .emsg3 {
     color: red;
+    float: right;
+    font-size: 1em;
     padding: 0;
     margin: 0;
 }
 
-
-.valiP {
-    color: red;
-    font-size: 0.6em;
-    padding: 0;
-    margin: 0;
-    text-align: left;
+.hidden1, .hidden2, .hidden3, .hidden4 {
+    visibility: hidden;
 }
 
 
-.hidden {
-     visibility: hidden;
-}
 
