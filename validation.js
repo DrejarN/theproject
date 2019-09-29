@@ -2,7 +2,8 @@
 
 //Namn
 $(document).ready(function() {
-    var $regexname=/^([a-zA-Z]{3,30})$/;
+    var $regexname = /^([a-zA-Z\s]{3,30})$/;  
+    //var $regexname=/^([a-zA-Z]{3,30})$/; // utan spaces
     $('#fname').keyup(function() {
       if (!$(this).val().match($regexname)) {
           console.log("Ingen match");
@@ -29,7 +30,6 @@ $(document).ready(function() {
          }
   });
 });
-
 
 
 //Email
