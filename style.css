@@ -399,9 +399,12 @@ p.pauseplay {
     padding: 0.2em;
 }
 
-.main p1 {
-    padding: 0em;
-    font-size: 1.2em;
+h1.projectH1 {
+    width:100%;
+    text-align: center;
+    padding:0em;
+    margin:0em;
+    font-size:1em;
 }
 
 p.brodtext {
@@ -453,11 +456,12 @@ p.brodtextFet {
         padding: 0.2em;
     }
 
-    .main p1 {
-        padding: 5em;
-        margin: 5em;
-        font-size: 2em;
+    h1.projectH1 {
+        width:100%;
         text-align: center;
+        padding:0em;
+        margin:0em;
+        font-size:1.5em;
     }
 
     p.brodtext {
