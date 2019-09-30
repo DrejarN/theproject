@@ -36,7 +36,6 @@ $(document).ready(function() {
     var $regexemail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     $('#email').keyup(function() {
       if (!$(this).val().match($regexemail)) {
-          console.log("de matchar ej");
            $('.emsg3').removeClass('hidden3');
            $('.emsg3').show();
        }
@@ -47,4 +46,16 @@ $(document).ready(function() {
 });
 
 
-//Validering Meddelande, text-ruta
+//Validering Meddelande. Säger ifrån om rutan är rom.
+$(document).ready(function() {
+  var $regexEmptyForm = /^$/;
+  $('#subject').keyup(function() {
+    if ($(this).val().match($regexEmptyForm)) {
+         $('.emsg4').removeClass('hidden4');
+         $('.emsg4').show();
+     }
+   else {
+        $('.emsg4').addClass('hidden4');
+       }
+  });
+});
