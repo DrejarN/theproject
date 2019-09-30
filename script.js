@@ -113,10 +113,3 @@ $(document).ready(function() {
   document.contactForm.subject.value = JSON.parse(localStorage.getItem('mittObj')).meddelande;
  
 });
-
-
-$(function() {
-  $('#sub').click(function() {
-    window.localStorage.removeItem('mittObj');
-  });
-});

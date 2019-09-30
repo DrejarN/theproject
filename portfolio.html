@@ -1,72 +1,76 @@
 <!DOCTYPE html>
-<html lang = "sv">
-<header> 
-    <meta charset = "utf-8">
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
     <title>Portfolio</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" href=style.css type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,300i&display=swap" rel="stylesheet">
-</header>
+</head>
+
 <body>
     <div class="container">
-            <div class="sidebar">
-                    <nav>
-                        <div class = "stripes">
-                            <i><img src="icons8-menu-24.png"></i>
-                        </div>
-                        <ul>
-                            <li><a href="startsida.html">Home</a></li>
-                            <li><a href="team.html">Team</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
+        <div class="sidebar">
+            <nav>
+                <div class="stripes">
+                    <i><img src="icons8-menu-24.png" alt=""></i>
                 </div>
+                <ul>
+                    <li><a href="startsida.html">Home</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
         <div class="main">
-            <section>
+            <div>
                 <div>
-                    <p1>Featured projects</p1>
+                    <h1 class="projectH1">Featured projects</h1>
                 </div>
                 <br>
-                <div class="slideshow-container" onmouseover="clearTimeout(myTimeOut)" onmouseout="showSlides()"> 
+                <div class="slideshow-container" onmouseover="clearTimeout(myTimeOut)" onmouseout="showSlides()">
                     <!-- På mouse over/out pausar eller fortsätter den bildspelet-->
 
                     <div class="mySlides fade">
-                      <div class="numbertext">1 / 4</div>
-                      <img class="bsBild" src="templateEx1.jpg">
+                        <div class="numbertext">1 / 4</div>
+                        <img class="bsBild" src="templateEx1.jpg" alt="">
                     </div>
-                    
+
                     <div class="mySlides fade">
-                      <div class="numbertext">2 / 4</div>
-                      <img class="bsBild" src="templateEx2.jpg">
+                        <div class="numbertext">2 / 4</div>
+                        <img class="bsBild" src="templateEx2.jpg" alt="">
                     </div>
-                    
+
                     <div class="mySlides fade">
-                      <div class="numbertext">3 / 4</div>
-                      <img class="bsBild" src="templateEx3.jpg">
+                        <div class="numbertext">3 / 4</div>
+                        <img class="bsBild" src="templateEx3.jpg" alt="">
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext">4 / 4</div>
-                        <img class="bsBild" src="templateEx4.jpg">
+                        <img class="bsBild" src="templateEx4.jpg" alt="">
                     </div>
-
-                    </div>
+                    
+                </div>
+                    
                     
                     <br>
                     
-                    <div style="text-align:center">
+                    <div class="ledots">
                       <span class="dot"></span> 
                       <span class="dot"></span> 
                       <span class="dot"></span>
                       <span class="dot"></span>  
                     </div>
+                    <p class="pauseplay">Hover over the picture to pause the slideshow!</p>
+
                     <script>
                         var slideIndex = 0;
                         showSlides();
                     </script>
-                    <!--<p>Is the slideshow too fast? Hover over the picture to pause it!</p> -->
 
                     <br>
                     <div class="grid-container"> <!-- En box som omringar alla projekt under  bildspelet-->
@@ -124,12 +128,11 @@
 
                         </div>
                     </div>
-            </section>
+                </div>
         </div>
         <div class="bottom">
-                <p>Portfolio project by Group 38</p>
         </div>
     </div>
-
 </body>
+
 </html>

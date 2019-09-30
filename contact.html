@@ -1,75 +1,78 @@
 <!DOCTYPE html>
-<html lang = "sv">
-<header> 
-    <meta charset = "utf-8">
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
     <title>Contact Us</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script.js"></script>
     <script src='validation.js'></script>
     <link rel="stylesheet" href=style.css type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,300i&display=swap" rel="stylesheet">
-    
+</head>
 
-</header>
 <body>
     <div class="container">
-            <div class="sidebar">
-                    <nav>
-                        <div class = "stripes">
-                            <i><img src="icons8-menu-24.png" alt=""></i>
-                        </div>
-                        <ul>
-                            <li><a href="startsida.html">Home</a></li>
-                            <li><a href="team.html">Team</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
+        <div class="sidebar">
+            <nav>
+                <div class="stripes">
+                    <i><img src="icons8-menu-24.png" alt=""></i>
                 </div>
+                <ul>
+                    <li><a href="startsida.html">Home</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
         <div class="main">
-            <section class = "contSec">
+            <div class="contactDiv">
                 <!-- Här är main 'content', skriv in info / vad ni vill fylla sidan med här! -->
                 <div class="contactFormClass">
 
-                        <!-- Kör action när man trycker på submit och öppnar resultatet i ett nytt fönster -->
-                        <form name="contactForm">
-                
-                            <!-- Ruta 1: Förnamn -->
-                            <label for="fname">Name</label>
-                            <label class="l2"><span class="emsg1 hidden1">Please enter a valid Name!</span></label>
-                            <input type="text" id="fname" name="firstname" placeholder="Your name" class="storeData">
-                            
-                            <!-- Ruta 2: Telefon -->
-                            <label for="phoneNr">Phone Number</label>
-                            <label class="l2"><span class="emsg2 hidden2">Please enter a valid number!</span></label>
-                            <input type="text" id="phoneNr" name="phonenumber" placeholder="Your phone number" class="storeData">
-                
-                            <!-- Ruta 3: E-mail -->
-                            <label for="email">E-mail</label>
-                            <label class="l2"><span class="emsg3 hidden3">Please enter a valid email!</span></label>
-                            <input type="text" id="email" name="emailadress" placeholder="Your E-mail" class="storeData">
+                    <!-- Kör action när man trycker på submit och öppnar resultatet i ett nytt fönster -->
+                    <form name="contactForm">
 
-                            <!-- Ruta 4: Meddelande -->
-                            <label for="subject">Subject</label>
-                            <label class="l2"><span class="emsg4 hidden4">The text field is empty!</span></label>
-                            <textarea id="subject" name="subject" placeholder="Write something" rows="10" class="storeData"></textarea>
-                
-                            <!-- Submit-knapp -->
-                            <input type="submit" value="Submit" id="sub">
-                        </form>
-                    
+                        <!-- Ruta 1: Förnamn -->
+                        <label for="fname">Name</label>
+                        <label class="l2"><span class="emsg1 hidden1">Please enter a valid Name!</span></label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name" class="storeData">
+
+                        <!-- Ruta 2: Telefon -->
+                        <label for="phoneNr">Phone Number</label>
+                        <label class="l2"><span class="emsg2 hidden2">Please enter a valid number!</span></label>
+                        <input type="text" id="phoneNr" name="phonenumber" placeholder="Your phone number"
+                            class="storeData">
+
+                        <!-- Ruta 3: E-mail -->
+                        <label for="email">E-mail</label>
+                        <label class="l2"><span class="emsg3 hidden3">Please enter a valid email!</span></label>
+                        <input type="text" id="email" name="emailadress" placeholder="Your E-mail" class="storeData">
+
+                        <!-- Ruta 4: Meddelande -->
+                        <label for="subject">Subject</label>
+                        <label class="l2"><span class="emsg4 hidden4">The text field is empty!</span></label>
+                        <textarea id="subject" name="subject" placeholder="Write something" rows="10"
+                            class="storeData"></textarea>
+
+                        <!-- Submit-knapp -->
+                        <input type="button" value="Submit" id="sub">
+                    </form>
+
                 </div>
-                        <div class="googleMaps">
-                
-                        <!-- Kartbild på förbestämd plats, klick leder till interaktiv karta -->
-                        <iframe src="https://maps.google.com/maps?q=%C3%96rebro%20Universitet,%20Sweden&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"></iframe>
-                    </div>
-            </section>
+                <div class="googleMaps">
+
+                    <!-- Kartbild på förbestämd plats, klick leder till interaktiv karta -->
+                    <iframe
+                        src="https://maps.google.com/maps?q=%C3%96rebro%20Universitet,%20Sweden&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"></iframe>
+                </div>
+            </div>
         </div>
         <div class="bottom">
-                <p>Portfolio project by Group 38</p>
         </div>
     </div>
 
 </body>
+
 </html>
