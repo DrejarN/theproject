@@ -86,7 +86,6 @@ nav li {
 
 nav li a {
     color: rgb(255, 255, 255);
-    font-weight: 100i;
     opacity: 0.9;
     text-decoration: none;
     transition: 0.3s;
@@ -276,7 +275,7 @@ span {
     .bottom p {
         max-width: 960px;
         margin: 0 auto;
-        padding: 2;
+        padding: 2em;
     }
     .bottom {
         height: 15px;
@@ -401,8 +400,8 @@ p.pauseplay {
 }
 
 .main p1 {
-    padding: 0;
-    font-size: 1,2em;
+    padding: 0em;
+    font-size: 1.2em;
 }
 
 p.brodtext {
@@ -455,8 +454,8 @@ p.brodtextFet {
     }
 
     .main p1 {
-        padding: 5;
-        margin: 5;
+        padding: 5em;
+        margin: 5em;
         font-size: 2em;
         text-align: center;
     }
@@ -505,7 +504,6 @@ form {
 
 .googleMaps {
     width: auto;
-    position: flex;
     height: 20em;
     background-color: rgb(61, 61, 61);
     padding: 1.2em;
@@ -595,7 +593,6 @@ iframe {
     height: 40px;
     background: rgb(212, 212, 212);
     border-radius: 5px;
-    box-shadow: #717171;
     margin-bottom: 20px;
 }
 .title {
