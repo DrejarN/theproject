@@ -306,9 +306,10 @@ img {vertical-align: middle;}
   position: relative;
   margin: auto;
   background-color: blue;
+  align-items: center;
 }
 
-/* Caption text - MÅSTE FIXA STORLEKEN FÖR MOBIL */ 
+/* Caption text */ 
 .text {
   color: rgb(20, 2, 37);
   font-size: 0.5em;
@@ -343,6 +344,10 @@ img {vertical-align: middle;}
   transition: background-color 0.6s ease;
 }
 
+.ledots {
+    text-align: center;
+}
+
 .active {
   background-color: #717171;
 }
@@ -353,21 +358,14 @@ img {vertical-align: middle;}
   animation-duration: 1.5s;
 }
 
-/*
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-*/
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+p.pauseplay {
+    width: 100%;
+    font-size: 0.6em;
+    font-weight: 600;
+    color: black;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
 /* Content som ligger under bildspelet i portfolion
