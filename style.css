@@ -550,6 +550,8 @@ input[type=tel] {
 
 input[type=submit] {
     background-color: #6C40FF ;
+}
+
 input[type=button] {
     background-color: rgb(29, 29, 29);
     color: white;
