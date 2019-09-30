@@ -508,7 +508,7 @@ form {
 .googleMaps {
     width: auto;
     position: flex;
-    height: 20em;
+    height: auto;
     background-color: rgb(61, 61, 61);
     padding: 1.2em;
 }
@@ -574,25 +574,18 @@ iframe {
     border: none;
 }
 
-/*
+
 @media (min-width: 1040px){
 
+    .contSec {
+        display: flex;
+        flex-direction: row;
+    }
     .contactFormClass {
-        min-width: 800px;
-        overflow: auto;
-        display: inline-block;
-        position: relative;
-        background-color: rgb(61, 61, 61);
-        padding: 1.2em;
+        max-width: 60%;
     }
 
 }
-
-*/
-
-
-
-/* CONTACT CSS SLUTAR HÄR*/
 
 .skillBar {
     box-sizing: border-box;
