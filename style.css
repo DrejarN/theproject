@@ -662,7 +662,7 @@ iframe {
 
 /* VALIDERING */
 
-.emsg1, .emsg2, .emsg3 {
+.emsg1, .emsg2, .emsg3, .emsg4 {
     color: red;
     float: right;
     font-size: 1em;
