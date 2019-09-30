@@ -154,13 +154,17 @@ span {
 .show { 
     display: inline-block;
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: 400;
-    background: #6C40FF ;
-    padding: 0.5em;
-    margin: 1em 0;
     transition: 0.3s;
-    border-radius: 40px;
+    background-color: #6C40FF ;
+    color: white;
+    padding: 1.2em 2em;
+    margin: 2em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.6em;
     
 }
 
@@ -492,7 +496,7 @@ p.brodtextFet {
     height: auto;
     overflow: auto;
     position: relative;
-    background-color: rgb(61, 61, 61);
+    background-color:rgb(247, 247, 247);
     padding: 1.2em;
     display: flex;
 }
@@ -507,24 +511,25 @@ form {
 .googleMaps {
     width: auto;
     height: 20em;
-    background-color: rgb(61, 61, 61);
+    background-color: rgb(247, 247, 247);
     padding: 1.2em;
 }
 
 input[type=text], textarea {
     width: 100%; 
     padding: 1.2em;
-    border: 1px solid white; 
+    border: 1px solid rgb(0, 0, 0);
     box-sizing: border-box; 
     margin-top: 0.5em; 
     margin-bottom: 1.7em; 
     resize: none;
+    border-radius: 4px;
 }
 
 input[type=email] {
     width: 100%; 
     padding: 1.2em; 
-    border: 1px solid white; 
+    border: 1px solid rgb(0, 0, 0); 
     box-sizing: border-box; 
     margin-top: 0.5em; 
     margin-bottom: 1.7em; 
@@ -534,7 +539,7 @@ input[type=email] {
 input[type=tel] {
     width: 100%; 
     padding: 1.2em; 
-    border: 1px solid white; 
+    border: 1px solid rgb(0, 0, 0); 
     box-sizing: border-box; 
     margin-top: 0.5em; 
     margin-bottom: 1.7em; 
@@ -542,7 +547,7 @@ input[type=tel] {
 }
 
 input[type=submit] {
-    background-color: rgb(29, 29, 29);
+    background-color: #6C40FF ;
     color: white;
     padding: 1.2em 2em;
     border: none;
@@ -555,7 +560,7 @@ input[type=submit]:hover {
 }
 
 label {
-    color: white;
+    color: rgb(94, 94, 94);
     font-size: 0.8em;
     float: left;
 }
