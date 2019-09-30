@@ -31,7 +31,7 @@ html, body {
     padding: 2em 0;
 }
 
-.ulmembers {
+ul.ulmembers {
     margin: 0;
     display: block;
     justify-content: space-between;
@@ -244,7 +244,7 @@ span {
     .main {
         margin: 2em auto;
     }
-    .ulmembers {
+    ul.ulmembers {
         margin: 2em auto;
         display: flex;
         justify-content: space-evenly;
@@ -573,7 +573,7 @@ iframe {
 
 @media (min-width: 1040px){
 
-    .contSec {
+    .contactDiv {
         display: flex;
         flex-direction: row;
     }
