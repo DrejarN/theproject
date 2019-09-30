@@ -59,3 +59,26 @@ $(document).ready(function() {
        }
   });
 });
+
+//Validering på Submit - Ifall rutorna för namn eller text är tomma (eller om det finns error från realtidsvalidering uppe), så får man upp error.
+$(function() {
+  $('#sub').click(function() {
+    var $regexname = /^([a-zA-Z\s]{3,30})$/;
+    var $regexemail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    var $regexEmptyForm = /^$/;
+
+    if (!$('#fname').val().match($regexname)) {
+      window.alert("Something is wrong. Check your input!");
+    } else if (!$('#email').val().match($regexemail)) {
+      window.alert("Something is wrong. Check your input!");
+    } else if ($('#subject').val().match($regexEmptyForm)) {
+      window.alert("Something is wrong. Check your input!");
+    } else {
+      window.localStorage.removeItem('mittObj');
+      document.contactForm.emailadress.value = "";
+      document.contactForm.firstname.value = "";
+      document.contactForm.phonenumber.value = "";
+      document.contactForm.subject.value = "";
+    }
+  });
+});
