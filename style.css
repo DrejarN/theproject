@@ -33,11 +33,11 @@ html, body {
 
 .ulmembers {
     margin: 0;
-    padding: 0;
     display: block;
     justify-content: space-between;
     text-align: center;
     list-style: none;
+    padding: 2em;
 }
 
 .bottom p {
@@ -193,6 +193,10 @@ span {
     padding: 1em;
     position: relative;
     text-align: center;
+}
+.exp {
+    font-size: 1em;
+    color: rgb(63, 63, 63);
 }
 
 .close, .close2, .close3 {
@@ -474,6 +478,13 @@ p.brodtextFet {
         margin: 0;
     }
 
+    .exp {
+        font-size: 2em;
+    }
+    .popup p{
+        font-size: 1em;
+    }
+
 }
 
 /* CONTACT CSS BÖRJAR HÄR*/
@@ -667,6 +678,3 @@ iframe {
 .hidden1, .hidden2, .hidden3, .hidden4 {
     visibility: hidden;
 }
-
-
-
