@@ -508,7 +508,7 @@ form {
 .googleMaps {
     width: auto;
     position: flex;
-    height: auto;
+    height: 20em;
     background-color: rgb(61, 61, 61);
     padding: 1.2em;
 }
@@ -583,6 +583,9 @@ iframe {
     }
     .contactFormClass {
         max-width: 60%;
+    }
+    .googleMaps {
+        height: auto;
     }
 
 }
