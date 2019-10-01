@@ -46,14 +46,10 @@ ol.ulmembers {
     margin: 0;
 }
 
-.logo1 {
-    margin-bottom: 60%;
-    margin-top: 0;
-    padding: 0; 
-    color: white;
-    font-size: 2em;
-    font-style: italic;
+.exLogo {
+
 }
+
 
 .container {
     font-size: 1.5em;
@@ -113,11 +109,6 @@ nav div {
     text-align: center;
 }
 
-.logo {
-    font-size: 3em;
-    color: rgb(43, 43, 43);
-    font-weight: 300;
-}
 
 .main h1, .main2 h1 {
     font-size: 1.5em;
@@ -548,12 +539,8 @@ input[type=tel] {
     resize: none;
 }
 
-input[type=submit] {
-    background-color: #6C40FF ;
-}
-
 input[type=button] {
-    background-color: rgb(29, 29, 29);
+    background-color: #6C40FF ;
     color: white;
     padding: 1.2em 2em;
     border: none;
