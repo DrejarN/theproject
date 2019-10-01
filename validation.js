@@ -5,7 +5,6 @@ $(document).ready(function () {
   var $regexname = /^([a-zA-Z\s]{3,30})$/;
   $('#fname').keyup(function () {
     if (!$(this).val().match($regexname)) {
-      console.log("Ingen match");
       $('.emsg1').removeClass('hidden1');
       $('.emsg1').show();
     }
@@ -81,4 +80,56 @@ $(function () {
       document.contactForm.subject.value = "";
     }
   });
+});
+
+//Validering för NAMN på onload om LS innehåller ett objekt
+$(document).ready(function () {
+  var $regexname = /^([a-zA-Z\s]{3,30})$/;
+  if (window.localStorage.getItem('mittObj') !== null) {
+    if (!$('#fname').val().match($regexname)) {
+      $('.emsg1').removeClass('hidden1');
+      $('.emsg1').show();
+    }
+  } else {
+    $('.emsg1').addClass('hidden1');
+  }
+});
+
+//Validering för EMAIL på onload om LS innehåller ett objekt
+$(document).ready(function () {
+  var $regexemail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if (window.localStorage.getItem('mittObj') !== null) {
+    if (!$('#email').val().match($regexemail)) {
+      $('.emsg3').removeClass('hidden3');
+      $('.emsg3').show();
+    }
+  } else {
+    $('.emsg3').addClass('hidden3');
+  }
+});
+
+//Validering för TELEFON på onload om LS innehåller ett objekt
+$(document).ready(function () {
+  var $regexnumber = /^[0-9]*$/g;
+  if (window.localStorage.getItem('mittObj') !== null) {
+    if (!$('#phoneNr').val().match($regexnumber)) {
+      $('.emsg2').removeClass('hidden2');
+      $('.emsg2').show();
+    }
+  } else {
+    $('.emsg2').addClass('hidden2');
+  }
+});
+
+//Validering för SUBJECT på onload om LS innehåller ett objekt
+$(document).ready(function () {
+  var $regexEmptyForm = /^$/;
+  if (window.localStorage.getItem('mittObj') !== null) {
+    if ($('#subject').val().match($regexEmptyForm)) {
+      $('.emsg4').removeClass('hidden4');
+      $('.emsg4').show();
+    }
+  } else {
+    $('.emsg4').addClass('hidden4');
+  }
 });
