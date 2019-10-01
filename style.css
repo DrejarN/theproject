@@ -3,24 +3,23 @@
 
 html, body {
     font-family: 'Roboto', sans-serif;
-    background: #ececec;
+    background: #ebebee;
     margin: 0;
 }
 
 .main, .main2 {
     height: auto;
     grid-area: main;
-    background:#ececec;
 
 }
 
+.stripes {
+    width: 50%;
+}
 .sidebar {
     grid-area: sidebar;
-    background-image: linear-gradient(to right, 
-    #5932FF,
-    #5932FF,
-    #6C40FF    
-    );  
+    background-color: white;
+    background-image: url(background.jpg);
     justify-content: center;
     z-index: 9999;
 }
@@ -40,16 +39,6 @@ ol.ulmembers {
     padding: 2em;
 }
 
-.bottom p {
-    color: rgb(170, 170, 170);
-    padding: 0;
-    margin: 0;
-}
-
-.exLogo {
-
-}
-
 
 .container {
     font-size: 1.5em;
@@ -58,7 +47,7 @@ ol.ulmembers {
     display: grid;
     grid-template-areas: "sidebar" "main" "bottom";
     grid-template-columns: 1fr;
-    grid-template-rows: 80px auto 20px;
+    grid-template-rows: 70px auto 20px;
 }
 
 .main, .sidebar, .bottom, .main2 {
@@ -66,12 +55,15 @@ ol.ulmembers {
 }
 
 ul {
+    padding: 0.5em;
     display: none;
-    margin: 0;
-    padding: 0;
+    margin: 0.5em;
     position: static;
-    background: rgb(143, 150, 255);
-    width: 17%;
+    max-width: 150px;
+    min-width: 150px;
+    background: rgb(235, 235, 235);
+    border: 1px solid rgb(65, 65, 65) ;
+    border-radius: 4px;
 }
 
 nav li {
@@ -81,8 +73,8 @@ nav li {
 } 
 
 nav li a {
-    color: rgb(255, 255, 255);
-    opacity: 0.9;
+    color: rgb(0, 0, 0);
+    opacity: 0.8;
     text-decoration: none;
     transition: 0.3s;
     display: block;
@@ -90,7 +82,6 @@ nav li a {
 
 nav li a:hover {
     opacity: 1;
-    background: rgb(213, 161, 255);
 }
 
 nav div {
@@ -109,15 +100,33 @@ nav div {
     text-align: center;
 }
 
+.logo {
+    font-size: 3em;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+}
 
-.main h1, .main2 h1 {
+.main2 h1 {
     font-size: 1.5em;
     font-weight: 300;
-    color: rgb(66, 66, 66);;
+    color: rgb(20, 20, 20);;
 }
+
+.main h1 {
+    font-size: 2em;
+    font-weight: 300;
+}
+
 span {
-    color:rgb(44, 44, 44);
+    color:rgb(75, 127, 223);
+    text-shadow: 1px 1px rgb(131, 131, 131);
 }
+
+.main h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
 
 .main2 img {
     width: 200px;
@@ -131,14 +140,13 @@ span {
 
 .desc {
     display: inline-block;
-    color: gray;
-
+    color: rgb(31, 31, 31);
 }
 
 .main p, .main2 p {
     font-weight: 300;
     line-height: 1.8em;
-    color: rgb(102, 102, 102);
+    color: rgb(70, 70, 70);
     font-style: italic;
 }
 
@@ -148,7 +156,7 @@ span {
     color: rgb(255, 255, 255);
     font-weight: 400;
     transition: 0.3s;
-    background-color: #6C40FF ;
+    background-color: rgb(75, 127, 223) ;
     color: white;
     padding: 1.2em 2em;
     margin: 2em;
@@ -216,6 +224,7 @@ span {
         width: auto;
         align-items: center;
         background: none;
+        border: none;
     }
     .container {
         grid-template-areas: "sidebar main"
@@ -230,15 +239,13 @@ span {
     }
     .sidebar {
         padding-top: 3em;
-        background-image: linear-gradient( 
-            #5932FF,
-            #5932FF,
-            #6C40FF   
-        );
+        background-color: #ececec;   
+        background-image: url(backgroundRotated.jpg);
     }
     .main {
         margin: 2em auto;
     }
+
     ol.ulmembers {
         margin: 2em auto;
         display: flex;
@@ -253,6 +260,7 @@ span {
 
     .main h1{
         font-size: 3em;
+
     }
 
     .main p {
@@ -275,12 +283,14 @@ span {
     .bottom {
         height: 15px;
     }
-    .logo1 {
-        font-size: 3em;
-    }
+
     .popup{
         width: 700px;
         height: 700px;
+    }
+    nav ul li a {
+        color: white;
+        font-weight: 500;
     }
 
 }
