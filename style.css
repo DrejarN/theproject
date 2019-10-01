@@ -236,8 +236,9 @@ span {
     }
     .sidebar {
         padding-top: 3em;
-        background-color: #ececec;   
+        background-color:#322D94;
         background-image: url(backgroundRotated.jpg);
+        background-repeat: no-repeat;
     }
     .main {
         margin: 2em auto;
