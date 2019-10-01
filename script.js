@@ -1,5 +1,6 @@
 //Vår JS kod   
 
+//Menybaren ändras beroende på skärmstorlek
 $(function(){
     $(".stripes").click(function() {
         $("ul").slideToggle();
