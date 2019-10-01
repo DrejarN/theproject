@@ -13,7 +13,7 @@ $(function(){
     });
 });
 
-
+//Sköter animation för skills-staplarna på personliga sidorna
 $(function(){
     document.getElementById('moreinfo').addEventListener('click', function(){
         document.querySelector('.darker').style.display = 'flex';
@@ -31,6 +31,7 @@ $(function(){
 
 });
 
+//Sköter animation för skills-staplarna på personliga sidorna
 $(function(){
     document.getElementById('moreinfo2').addEventListener('click', function(){
         document.querySelector('.darker2').style.display = 'flex';
@@ -46,6 +47,8 @@ $(function(){
     
     });
 });
+
+//Sköter animation för skills-staplarna på personliga sidorna
 $(function(){
     document.getElementById('moreinfo3').addEventListener('click', function(){
         document.querySelector('.darker3').style.display = 'flex';
@@ -61,6 +64,8 @@ $(function(){
     
     });
 });
+
+//Funktionen som kör bildspelet
 
 var myTimeOut;
 
@@ -81,8 +86,8 @@ function showSlides() {
     dots[slideIndex-1].className += " active";
     myTimeOut = setTimeout(showSlides, 4000); // Byter bild var 4:e sek
   }
-
   
+//Tar input från contact-fält, skapar ett objekt och lagrar i webläsarens Local Storage i JSON-format
 $(document).ready(function() {
   $('.storeData').keyup(function() {
 
@@ -105,7 +110,7 @@ $(document).ready(function() {
   });
 });
 
-
+//Fyller i fält på contact-sidan från Local Storage på sidladdning.
 $(document).ready(function() {
   document.contactForm.emailadress.value = JSON.parse(localStorage.getItem('mittObj')).epost;
   document.contactForm.firstname.value = JSON.parse(localStorage.getItem('mittObj')).name;
